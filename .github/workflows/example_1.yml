@@ -3,8 +3,8 @@ on: workflow_dispatch
 
 jobs:
   first-job: # custom name - anything you want
-    runs on macos-11
+    runs-on: macos-11
     steps:
-      -name: hello
-      run: echo "Hello World"
-      run: echo "How are you?"
+      - name: hello
+        run: echo "Hello World"
+        run: echo "How are you?"
